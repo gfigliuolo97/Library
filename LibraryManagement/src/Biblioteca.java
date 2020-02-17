@@ -6,8 +6,6 @@ public class Biblioteca {
 	private ArrayList<Libro> libriInBiblioteca;
 	//Persone che hanno a che fare con la biblioteca, che siano clienti, proprietari o dipendenti
 	private HashMap<String,Persona> persone;
-	//Insieme dei libri prestati
-	private ArrayList<Libro> libriPrestati;
 	
 	Biblioteca(){
 		libriInBiblioteca = new ArrayList<>();
