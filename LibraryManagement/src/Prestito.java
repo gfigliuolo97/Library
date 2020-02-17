@@ -1,14 +1,16 @@
+import java.util.Calendar;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class Prestito {
 	private Persona persona;
 	private Libro libro;
 	private Persona membroStaff;
-	private GregorianCalendar inizioPrestito;
-	private GregorianCalendar finePrestito;
+	private Calendar inizioPrestito;
+	private Calendar finePrestito;
 	private boolean prestitoFinito;
 	
-	Prestito(Biblioteca b, Persona p, Libro l, Persona mS, GregorianCalendar inizioP, GregorianCalendar fineP){
+	Prestito(Biblioteca b, Persona p, Libro l, Persona mS, Calendar inizioP, Calendar fineP){
 		this.persona = p;
 		this.libro = l;
 		this.membroStaff = mS;
@@ -42,19 +44,19 @@ public class Prestito {
 		this.membroStaff = membroStaff;
 	}
 
-	public GregorianCalendar getInizioPrestito() {
+	public Calendar getInizioPrestito() {
 		return inizioPrestito;
 	}
 
-	public void setInizioPrestito(GregorianCalendar inizioPrestito) {
+	public void setInizioPrestito(Calendar inizioPrestito) {
 		this.inizioPrestito = inizioPrestito;
 	}
 
-	public GregorianCalendar getFinePrestito() {
+	public Calendar getFinePrestito() {
 		return finePrestito;
 	}
 
-	public void setFinePrestito(GregorianCalendar finePrestito) {
+	public void setFinePrestito(Calendar finePrestito) {
 		this.finePrestito = finePrestito;
 	}
 
@@ -66,5 +68,11 @@ public class Prestito {
 		this.prestitoFinito = prestitoFinito;
 	}
 	
+	public void stampaInfoPrestito() {
+		System.out.println("Utente:"+persona.getNome()+" "+persona.getCognome());
+		System.out.println("Periodo Prestito:"
+				+inizioPrestito.get(Calendar.DAY_OF_MONTH)+"/"+inizioPrestito.get(Calendar.MONTH)+"/"+inizioPrestito.get(Calendar.YEAR)+"-"
+				+finePrestito.get(Calendar.DAY_OF_MONTH)+"/"+finePrestito.get(Calendar.MONTH)+"/"+finePrestito.get(Calendar.YEAR));		
+	}
 	
 }

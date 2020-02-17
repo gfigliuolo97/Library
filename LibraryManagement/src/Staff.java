@@ -16,5 +16,4 @@ public class Staff extends Persona{
 		this.inizioContratto = inizioContratto;
 	}
 	
-	
 }

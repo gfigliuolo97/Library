@@ -1,3 +1,4 @@
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
@@ -5,13 +6,13 @@ public class Libro {
 	private Integer isbn;
 	private String titolo;
 	private ArrayList<Persona> autori;
-	private GregorianCalendar edizione;
+	private Date edizione;
 	private boolean possibilePrestarlo = true;
 	
 	Libro(){
 		autori = new ArrayList<>();
 	}
-	Libro(Integer isbn, String titolo, ArrayList<Persona> autori, GregorianCalendar edizione){
+	Libro(Integer isbn, String titolo, ArrayList<Persona> autori, Date edizione){
 		this.isbn = isbn;
 		this.titolo = titolo;
 		this.autori = autori;
@@ -36,11 +37,11 @@ public class Libro {
 	public void setTitolo(String titolo) {
 		this.titolo = titolo;
 	}
-	public GregorianCalendar getEdizione() {
+	public Date getEdizione() {
 		return edizione;
 	}
-	public void setEdizione(GregorianCalendar edizione) {
-		this.edizione = edizione;
+	public void setEdizione(Date date) {
+		this.edizione = date;
 	}
 	public void inizioPrestito() {
 		possibilePrestarlo = false;
