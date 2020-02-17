@@ -49,6 +49,12 @@ public class Libro {
 		possibilePrestarlo = true;
 	}
 	public String toString() {
-		return "|"+titolo+"|"+autori;
+		String prestabile;
+		if(possibilePrestarlo == true) {
+			prestabile = "Si";
+		}else {
+			prestabile = "No";
+		}
+		return "\n|Titolo:"+titolo+"\n|Autori:"+autori+"\n|Prestabile:"+prestabile+"\n";
 	}
 }
