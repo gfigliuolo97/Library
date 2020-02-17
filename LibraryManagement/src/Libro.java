@@ -42,7 +42,7 @@ public class Libro {
 	public void setEdizione(GregorianCalendar edizione) {
 		this.edizione = edizione;
 	}
-	public void prestato() {
+	public void inizioPrestito() {
 		possibilePrestarlo = false;
 	}
 	public void finePrestito() {
