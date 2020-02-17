@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Staff extends Persona{
 	Staff(String nome, String cognome) {
@@ -6,13 +6,13 @@ public class Staff extends Persona{
 		// TODO Auto-generated constructor stub
 	}
 
-	private Date inizioContratto;
+	private GregorianCalendar inizioContratto;
 
-	public Date getInizioContratto() {
+	public GregorianCalendar getInizioContratto() {
 		return inizioContratto;
 	}
 
-	public void setInizioContratto(Date inizioContratto) {
+	public void setInizioContratto(GregorianCalendar inizioContratto) {
 		this.inizioContratto = inizioContratto;
 	}
 	
