@@ -30,12 +30,6 @@ public class Biblioteca {
 	public void aggiungiDipendente(Persona p) {
 		persone.put(p.getCod_fiscale(),p);
 	}
-	public void aggiungiLibroPrestato(Libro l) {
-		libriPrestati.add(l);
-	}
-	public void rimuoviLibroPrestato(Libro l) {
-		libriPrestati.remove(l);
-	}
 	public void stampaListaLibriPresentiInBiblioteca() {
 		System.out.println(libriInBiblioteca);
 	}
