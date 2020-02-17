@@ -15,8 +15,7 @@ public class Prestito {
 		this.inizioPrestito = inizioP;
 		this.finePrestito = fineP;
 		prestitoFinito = false;
-		
-		b.libriPrestati.add(l);
+		l.inizioPrestito();
 	}
 
 	public Persona getPersona() {
