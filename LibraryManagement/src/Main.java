@@ -13,11 +13,11 @@ public class Main {
 		Libro libro3 = new Libro();
 		
 		Persona autore1 = new Persona("Giovanni","Figliuolo");		
-		Persona autore2 = new Persona("Katia","Avanzi");
-		Persona autore3 = new Persona("Fabrizio","Frasca");
+		Persona autore2 = new Persona("Katia","Martinucci");
+		Persona autore3 = new Persona("Fabrizio","Frascati");
 		Persona autore4 = new Persona("Fabrizio","DeSabtis");
 		
-		Persona cliente1 = new Persona("Emanuele","Figliuolo");
+		Persona cliente1 = new Persona("Emanuele","Cartini");
 		Biblioteca b = new Biblioteca();
 
 		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Europe/Rome"),Locale.ITALY);
