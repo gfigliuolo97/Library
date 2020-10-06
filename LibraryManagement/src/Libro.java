@@ -51,7 +51,7 @@ public class Libro {
 	}
 	public String toString() {
 		String prestabile;
-		if(possibilePrestarlo == true) {
+		if(possibilePrestarlo) {
 			prestabile = "Si";
 		}else {
 			prestabile = "No";
